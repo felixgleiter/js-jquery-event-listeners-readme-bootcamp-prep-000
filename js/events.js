@@ -14,8 +14,8 @@ function frameIt() {
 
 function pressIt() {
   $('form input:first-child').on('keydown'
-  , function(){
-    if ($('form input:first-child').val === "G" || $('form input:first-child').val === "g") {
+  , function(key){
+    if (key.which == 71){
       alert('You pressed G!');
     }
   });
